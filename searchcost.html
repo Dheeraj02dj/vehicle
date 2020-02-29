@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap1/css/bootstrap.min.css" type="text/css">
+    <script type="text/javascript" src="bootstrap/bootstrap1/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/styleform.css">
+    <style>
+        div2 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 0%;
+            bottom: 0;
+            left: 25%;
+            right: 0;
+        }
+
+        #myvideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="main.php" class="navbar-brand">Vehicle parking</a>
+            </div>
+        </div>
+    </div>
+    <div2 class="container" id='cont1'>
+        <div1 class="col-xs-8">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1>Search</h1>
+                </div>
+                <div class="panel-body">
+                    <form method="post" action="searchcost.php">
+                        <div>
+                            <h2>Enter cost </h2>
+                        </div>
+                        <input type="text" name="vnumber" class="form-control" placeholder="cost" required><br>
+                        <input type="submit" value="submit" class="btn btn-primary btn-block">
+                    </form>
+
+                </div>
+            </div>
+        </div1>
+    </div2>
+</body>
+
+</html>

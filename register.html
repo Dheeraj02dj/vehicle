@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vehicle</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap1/css/bootstrap.min.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=no" />
+    <script type="text/javascript" src="bootstrap/bootstrap1/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="bootstrap/bootstrap1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/styleform.css">
+    <style>
+        body {
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+
+<body background="pics/bg-01.jpg">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <p><a href="main.php" class="navbar-brand">Vehicle parking</a></p>
+            </div>
+            <div>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="search.html"><span class="glyphicon glyphicon-search"></span> Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div2 class="container" id='cont1'>
+        <div1 class="col-xs-6">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h1>Register</h1>
+                </div>
+                <div class="panel-body">
+                    <form method="post" action="register_script.php">
+                        <div>
+                            <h3>First name</h3>
+                        </div>
+                        <input type="text" name="firstname" class="form-control" placeholder="first name" required><br>
+                        <div>
+                            <h3>Last name</h3>
+                        </div>
+                        <input type="text" name="lastname" class="form-control" placeholder="last name"><br>
+                        <div>
+                            <h3>Phone number</h3>
+                        </div>
+                        <input type="text" name="phone-number" class="form-control" placeholder="phone number" required><br>
+                        <div>
+                            <h3>Vehicle number</h3>
+                        </div>
+                        <input type="text" name="vehicle-number" class="form-control" placeholder="vehicle number" required><br>
+                        <div class='form-group'>
+                            <h3>Vehicle type</h3>
+                            <select class="form-control" name="vtype">
+                                <option>cycle</option>
+                                <option>motor cycle</option>
+                                <option>four wheeler</option>
+                                <option>heavy load vehicle</option>
+                            </select><br>
+                            <input type="submit" value="Submit" class="btn btn-primary btn-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div1>
+    </div2>
+</body>
+
+</html>
